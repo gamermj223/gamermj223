@@ -1,0 +1,23 @@
+#div1 {
+    border-radius: 25px;
+    background-color: rgb(48, 136, 136);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This centers the content horizontally and vertically */
+}
+
+#clickerbutton { 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+#clickerbutton:hover {
+    background-color: rgb(155, 155, 155);
+}
