@@ -7,3 +7,9 @@ document.getElementById('clickerbutton').onclick = function(){
     document.getElementById('clickerbutton').innerHTML = clicks;
     localStorage.setItem('clicks', clicks);
 }
+
+document.getElementById('resetbutton').onclick = function(){
+    clicks = 0;
+    document.getElementById('clickerbutton').innerHTML = clicks;
+    localStorage.setItem('clicks', clicks);
+}
