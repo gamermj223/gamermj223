@@ -1,0 +1,84 @@
+html {
+    background-color: beige;
+}
+
+#div1 {
+    border-radius: 25px;
+    background-color: rgb(48, 136, 136);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This centers the content horizontally and vertically */
+}
+
+#stats_div {
+    border-radius: 25px;
+    background-color: rgb(48, 136, 136);
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#upgrade_div {
+    border-radius: 25px;
+    background-color: rgb(48, 136, 136);
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.upgradebuttons:hover {
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+.upgradebuttons {
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.labelstats {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: aliceblue;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#clickerbutton { 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+#clickerbutton:hover {
+    background-color: rgb(155, 155, 155);
+    cursor: pointer;
+}
