@@ -5,7 +5,7 @@ let clickerMultiplier = Number(localStorage.getItem('clickerMultiplier')) || 1
 
 document.getElementById('clickerbutton').innerHTML = clicks
 document.getElementById('clickerupgradebutton').innerHTML = 'Clicker Upgrade ' + ClickerUpgradeLevel + '<br>' + 'Cost - ' + ClickerUpgradeCost
-
+document.getElementById('clickerlevel').innerHTML = 'Clicker Level - ' + ClickerUpgradeLevel
 
 document.getElementById('clickerbutton').onclick = function(){
     clicks += clickerMultiplier
@@ -26,6 +26,7 @@ document.getElementById('resetbutton').onclick = function(){
     document.getElementById('clickerbutton').innerHTML = clicks
     localStorage.setItem('clicks', clicks)
     document.getElementById('clickerupgradebutton').innerHTML = 'Clicker Upgrade ' + ClickerUpgradeLevel + '<br>' + 'Cost - ' + ClickerUpgradeCost
+    document.getElementById('clickerlevel').innerHTML = 'Clicker Level - ' + ClickerUpgradeLevel
 }
 
 document.getElementById('clickerupgradebutton').onclick = function() {
@@ -41,5 +42,6 @@ document.getElementById('clickerupgradebutton').onclick = function() {
     document.getElementById('clickerupgradebutton').innerHTML = 'Clicker Upgrade ' + ClickerUpgradeLevel + '<br>' + 'Cost - ' + ClickerUpgradeCost
     document.getElementById('clickerbutton').innerHTML = clicks
     localStorage.setItem('ClickerUpgradeLevel', ClickerUpgradeLevel)
+    document.getElementById('clickerlevel').innerHTML = 'Clicker Level - ' + ClickerUpgradeLevel
     localStorage.setItem('ClickerUpgradeCost', ClickerUpgradeCost)
 }
